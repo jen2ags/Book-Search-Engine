@@ -27,15 +27,17 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use(routes);
 
-const startApolloServer = async (typeDefs, resolvers) => {
-  await server.start();
+
 
   server.applyMiddleware({ app });
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  });
 
 
 db.once('open', () => {
   app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
-})
-};
+});
 
-startApolloServer(typeDefs, resolvers);
+
