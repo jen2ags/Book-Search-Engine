@@ -5,15 +5,20 @@ The purpose of this application is to allow a user to be able to search for book
 
 
 ## Built With
-* 
-* 
-* 
-* 
-* 
+* MERN stack
+* React
+* bootstrap
+* MongoDB
+* Node.js
+* Express.js
+* Google Books API
+* GraphQL
+* Apollo Server
 
 
 ## Installation
-To install this application: 
+To run this application from the root of the project in the command line:
+* npm run develop
 
 ## GitHub Repository
 https://github.com/jen2ags/Book-Search-Engine
@@ -22,7 +27,7 @@ https://github.com/jen2ags/Book-Search-Engine
 
 
 ## Screen Shot
-![Screenshot Book Search Engine]()
+![Screenshot Book Search Engine](https://github.com/jen2ags/Book-Search-Engine/blob/main/assets/Book%20Engine%20Search%20screenshot.png)
 
 
 
